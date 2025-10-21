@@ -120,7 +120,7 @@ router.post('/prompt', auth, async (req, res) => {
     Output format should be a JSON array of objects.e.g=
          {"questionText": "[Question on given task]",
           "options": ["option1","option2","option3","option4"],
-          "correctAnswer": [no. of the correct option in integer]}`;
+          "correctAnswer": [no. of the correct option in integer 1 to 4 ]}`;
     const genAI = new GoogleGenerativeAI("AIzaSyA9B_nP12dTgb4END_SYzEhdIGD2fmCuEs");
     const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
     try {
